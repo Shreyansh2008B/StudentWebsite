@@ -1,0 +1,45 @@
+:root {
+    --card-background-color: #E0ECFF;
+     --card-box-shadow: 4px 4px 0px #000000;
+     --card-border-radius: 0.75rem;
+     --card-border: 2px solid black;
+}
+
+.aboutcontainer {
+    width: auto;
+    background-color:var(--card-background-color);
+    box-shadow:var(--card-box-shadow);
+    border: var(--card-border);
+    border-radius:var(--card-border-radius);
+    height: 52vw;
+   
+    margin: 10px;
+}
+
+.profile {
+    background-color:var(--card-background-color);
+    box-shadow:var(--card-box-shadow);
+    border: var(--card-border);
+    border-radius:var(--card-border-radius);
+    
+    margin-right: 20px;
+    width: 15vw;
+    height: 15vw;
+
+
+
+}
+.box {
+  background-color: var(--card-background-color);
+  box-shadow: var(--card-box-shadow);
+  border: var(--card-border);
+  border-radius: var(--card-border-radius);
+  width: 70vw;
+  height: 50w; 
+  
+ 
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2vw;                       
+  padding: 2vw;                   
+}

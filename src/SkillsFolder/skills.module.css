@@ -1,0 +1,20 @@
+:root {
+    --card-background-color: #E0ECFF;
+     --card-box-shadow: 4px 4px 0px #000000;
+     --card-border-radius: 0.75rem;
+     --card-border: 2px solid black;
+}
+
+.Skillscontainer {
+    width: auto;
+    background-color: var(--card-background-color);
+    box-shadow: var(--card-box-shadow);
+    border: var(--card-border);
+    border-radius: var(--card-border-radius);
+    min-height: auto;
+    margin: 10px;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}

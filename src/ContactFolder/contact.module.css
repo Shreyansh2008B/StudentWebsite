@@ -1,0 +1,56 @@
+:root {
+  --card-background-color: #E0ECFF;
+  --card-box-shadow: 4px 4px 0px #000000;
+  --card-border-radius: 0.75rem;
+  --card-border: 2px solid black;
+}
+
+.Contactcontainer {
+  width: auto;
+  background-color: var(--card-background-color);
+  box-shadow: var(--card-box-shadow);
+  border: var(--card-border);
+  border-radius: var(--card-border-radius);
+  min-height: auto;
+  margin: 10px;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+/* Responsive grid for contact action buttons */
+.linksGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1rem;
+  width: 100%;
+}
+
+/* Neubrutalist Button Styles */
+.contactBtn {
+  color: #000000;
+  font-weight: 700;
+  font-size: 0.95rem;
+  padding: 0.75rem 1rem;
+  border: 2px solid #000000;
+  border-radius: var(--card-border-radius);
+  box-shadow: 4px 4px 0px #000000;
+  text-decoration: none;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: transform 120ms ease, box-shadow 120ms ease;
+}
+
+.contactBtn:hover {
+  transform: translate(-3px, -3px);
+  box-shadow: 7px 7px 0px #000000;
+}
+
+.contactBtn:active {
+  transform: translate(2px, 2px);
+  box-shadow: 2px 2px 0px #000000;
+}

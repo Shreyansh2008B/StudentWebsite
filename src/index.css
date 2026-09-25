@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+  box-sizing: border-box;
+}
+body {
+    min-height: 100vh;
+    background-color: #ffffff;
+    background-image: radial-gradient(#94a3b8 2px, transparent 2px);
+    background-size: 24px 24px;
+}
