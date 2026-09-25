@@ -11,3 +11,12 @@ body {
     background-image: radial-gradient(#94a3b8 2px, transparent 2px);
     background-size: 24px 24px;
 }
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}

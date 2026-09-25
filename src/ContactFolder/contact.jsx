@@ -1,9 +1,11 @@
 import Card from "../card";
 import styles from './contact.module.css';
+import useReveal, { revealStyle } from '../useReveal';
 
 function Contact() {
+  const [ref, visible] = useReveal();
   return (
-    <section className={styles.Contactcontainer}>
+    <section ref={ref} style={revealStyle(visible)} className={styles.Contactcontainer}>
       {/* Contact Intro Card */}
       <Card
         text="📬 Let's Connect & Build Together"

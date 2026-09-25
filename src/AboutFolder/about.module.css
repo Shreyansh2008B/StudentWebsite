@@ -7,39 +7,100 @@
 
 .aboutcontainer {
     width: auto;
-    background-color:var(--card-background-color);
-    box-shadow:var(--card-box-shadow);
+    background-color: var(--card-background-color);
+    box-shadow: var(--card-box-shadow);
     border: var(--card-border);
-    border-radius:var(--card-border-radius);
-    height: 52vw;
-   
+    border-radius: var(--card-border-radius);
     margin: 10px;
+    padding: 1.5rem;
+    box-sizing: border-box;
 }
 
-.profile {
-    background-color:var(--card-background-color);
-    box-shadow:var(--card-box-shadow);
-    border: var(--card-border);
-    border-radius:var(--card-border-radius);
-    
-    margin-right: 20px;
-    width: 15vw;
-    height: 15vw;
-
-
-
+.heading {
+    margin: 0 0 1.25rem;
+    text-align: center;
+    font-family: monospace;
+    font-size: clamp(1.5rem, 4vw, 2.75rem);
 }
+
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+    gap: 1.5rem;
+}
+
 .box {
   background-color: var(--card-background-color);
   box-shadow: var(--card-box-shadow);
   border: var(--card-border);
   border-radius: var(--card-border-radius);
-  width: 70vw;
-  height: 50w; 
-  
- 
+  flex: 3 1 480px;
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 2vw;                       
-  padding: 2vw;                   
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+  padding: 1.5rem;
+  box-sizing: border-box;
+}
+
+.profileColumn {
+  flex: 1 1 240px;
+  max-width: 320px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.profile {
+    background-color: var(--card-background-color);
+    box-shadow: var(--card-box-shadow);
+    border: var(--card-border);
+    border-radius: var(--card-border-radius);
+    width: 100%;
+    max-width: 240px;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+}
+
+.infoCardSmall,
+.infoCardLarge {
+    width: 100%;
+    box-sizing: border-box;
+    box-shadow: var(--card-box-shadow);
+    border: var(--card-border);
+    border-radius: var(--card-border-radius);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-family: monospace;
+    padding: 1rem;
+    font-size: clamp(0.85rem, 2vw, 1.1rem);
+}
+
+.infoCardSmall {
+    background-color: #06B6D4;
+    min-height: 64px;
+}
+
+.infoCardLarge {
+    background-color: #84CC16;
+    min-height: 100px;
+}
+
+@media (max-width: 640px) {
+  .aboutcontainer {
+    margin: 10px 6px;
+    padding: 1rem;
+  }
+
+  .profileColumn {
+    max-width: 100%;
+  }
+
+  .profile {
+    max-width: 200px;
+  }
 }

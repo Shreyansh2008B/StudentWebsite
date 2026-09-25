@@ -1,9 +1,11 @@
 import Card from '../card';
 import styles from './eduction.module.css';
+import useReveal, { revealStyle } from '../useReveal';
 
 function Education() {
+  const [ref, visible] = useReveal();
   return (
-    <section className={styles.Educationcontainer}>
+    <section ref={ref} style={revealStyle(visible)} className={styles.Educationcontainer}>
      
       <Card
         text="🏫 Scaler School of Technology"

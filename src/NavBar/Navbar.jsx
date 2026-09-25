@@ -1,22 +1,22 @@
 
 import styles from'./nav.module.css';
 
-function NavigationMenu() {
+function NavigationMenu({page1,page2,page3,page4,page5}) {
   return (
     <nav className={styles.navbarcontainer}>
-      <a href="#about" className={styles.navitem}>
+      <a href={page1} className={styles.navitem}>
         About
       </a>
-      <a href="#skills" className={styles.navitem}>
+      <a href={page2} className={styles.navitem}>
         Skills
       </a>
-      <a href="#projects" className={styles.navitem}>
+      <a href={page3} className={styles.navitem}>
         Projects
       </a>
-      <a href="#education" className={styles.navitem}>
+      <a href={page4} className={styles.navitem}>
         Education
       </a>
-      <a href="#contact" className={styles.navitem}>
+      <a href={page5} className={styles.navitem}>
         Contact
       </a>
     </nav>

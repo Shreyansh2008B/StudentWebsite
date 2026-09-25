@@ -1,9 +1,11 @@
 import Card from "../card";
 import styles from './skills.module.css';
+import useReveal, { revealStyle } from '../useReveal';
 
 function Skills() {
+  const [ref, visible] = useReveal();
   return (
-    <section className={styles.Skillscontainer}>
+    <section ref={ref} style={revealStyle(visible)} className={styles.Skillscontainer}>
 
       {/* Card 1: Web & Frontend */}
       <Card

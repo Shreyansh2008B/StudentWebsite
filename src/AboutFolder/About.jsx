@@ -1,10 +1,13 @@
+
 import Card from '../card';
 import styles from './about.module.css';
+import useReveal, { revealStyle } from '../useReveal';
 function AboutSelf() {
+  const [ref, visible] = useReveal();
   return (<>
-    <section className={styles.aboutcontainer}>
-      <h1 className='ml-[100px] mt-[20px] text-[3.5vw] font-mono'>Hi I'm Shreyansh</h1>
-      <section className='flex justify-around flex-wrap'>
+    <section ref={ref} style={revealStyle(visible)} className={styles.aboutcontainer}>
+      <h1 className={styles.heading}>Hi I'm Shreyansh</h1>
+      <section className={styles.content}>
         <div className={styles.box}>
 
           <Card
@@ -42,18 +45,14 @@ function AboutSelf() {
           />
         </div>
 
-        <div>
-          <img src="public/Images/profile.jpg" alt="hello" className={styles.profile} /><br />
-          <div className="shadow-[4px_4px_0px_0px_rgb(0,0,0)] border-2 border-solid border-black rounded-[0.75rem] w-[20vw] h-[5vw] text-[1.26vw] flex justify-center items-center font-mono bg-[#06B6D4]">
+        <div className={styles.profileColumn}>
+          <img src="/Images/profile.jpg" alt="hello" className={styles.profile} />
+          <div className={styles.infoCardSmall}>
             Scaler School of Technology
-
           </div>
-          <br></br>
-          <div className="shadow-[4px_4px_0px_0px_rgb(0,0,0)] border-2 border-solid border-black rounded-[0.75rem] w-[20vw] h-[10vw] text-[1.6vw] flex justify-center items-center font-mono  text-center bg-[#84CC16]">
-            Degree: Bsc in Computer Science
+          <div className={styles.infoCardLarge}>
+            Degree: Bsc in Computer Science<br />
             Bits Pilani
-
-
           </div>
 
         </div>
