@@ -1,6 +1,6 @@
 import Card from "../card";
-import styles from './contact.module.css';
 import useReveal, { revealStyle } from '../useReveal';
+import styles from './contact.module.css';
 
 function Contact() {
   const [ref, visible] = useReveal();
@@ -17,38 +17,38 @@ function Contact() {
 
       {/* Social Links Row */}
       <div className={styles.linksGrid}>
-        <a 
-          href="mailto:Shreyan2752s@gmail.com" 
+        <a
+          href="mailto:Shreyan2752s@gmail.com"
           className={styles.contactBtn}
           style={{ backgroundColor: '#FACC15' }}
         >
           ✉️ Send Email
         </a>
 
-        <a 
-          href="https://github.com/Shreyansh2008B" 
-          target="_blank" 
-          rel="noopener noreferrer" 
+        <a
+          href="https://github.com/Shreyansh2008B"
+          target="_blank"
+          rel="noopener noreferrer"
           className={styles.contactBtn}
           style={{ backgroundColor: '#4ADE80' }}
         >
           🐙 GitHub
         </a>
 
-        <a 
-          href="https://www.linkedin.com/in/shreyansh-bhawsar-42972934a" 
-          target="_blank" 
-          rel="noopener noreferrer" 
+        <a
+          href="https://www.linkedin.com/in/shreyansh-bhawsar-42972934a"
+          target="_blank"
+          rel="noopener noreferrer"
           className={styles.contactBtn}
           style={{ backgroundColor: '#38BDF8' }}
         >
           💼 LinkedIn
         </a>
 
-        <a 
-          href="https://x.com/your-username" 
-          target="_blank" 
-          rel="noopener noreferrer" 
+        <a
+          href="https://x.com/Shreyan2752s"
+          target="_blank"
+          rel="noopener noreferrer"
           className={styles.contactBtn}
           style={{ backgroundColor: '#C084FC' }}
         >
